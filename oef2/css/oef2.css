@@ -1,2 +1,46 @@
-/*  Naam: 
-*/
+table{
+    font-family: serif;
+    margin: auto;
+    width: 800px;
+    height: 300px;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+td, th{
+    border: 3px solid rgb(0, 0, 0);
+}
+
+th{
+    font-size: 20px;
+}
+
+td{
+    font-family: monospace;
+    text-align: center;
+    font-size: 18px;
+}
+
+h1{
+    margin: 0;
+    font-size: 65px;
+}
+
+tbody tr:nth-child(1) td:nth-child(3), 
+tbody tr:nth-child(2) td:nth-child(3), 
+tbody tr:nth-child(3) td:nth-child(4), 
+tbody tr:nth-child(4) td:nth-child(5), 
+tbody tr:nth-child(5) td:nth-child(6)
+{
+    background-color: rgb(191, 191, 191);
+}
+
+thead tr:nth-child(1), tbody tr:nth-child(1) th:nth-child(1){
+    background-color: rgb(114, 114, 114);
+    color: #ffffff;
+}
+
+thead tr:nth-child(2), tbody th{
+    background-color: rgb(191, 191, 191);
+}
+
