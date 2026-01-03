@@ -8,6 +8,69 @@
     <meta charset="utf-8">
 </head>
 <body>
-  &star;
+  <header>
+    <h2>Spel-sessie Wingspan</h2>
+    <img src="images/1.jpeg" alt="Wingspan">
+  </header>
+
+  <form action="verwerk.html" method="get">
+    <div class="row">
+      <label class="col-2" for="datum">Datum:</label>
+      <input class="col-10" id="datum" type="date" name="datum" required>
+    </div>
+
+    <div class="row">
+      <label class="col-2" for="start">Start:</label>
+      <input class="col-4" id="start" type="number" name="start" min="0" max="23" required>
+
+      <label class="col-2" for="tijdsduur">Tijdsduur:</label>
+      <input class="col-4" id="tijdsduur" type="number" name="tijdsduur" min="1" max="12" required>
+    </div>
+
+    <div class="row">
+      <label class="col-2" for="email">E-mail:</label>
+      <input class="col-10" id="email" type="email" name="email" required>
+    </div>
+
+    <div class="row">
+      <label class="col-3" for="complexiteit">Complexiteit:</label>
+      <input class="col-9" id="complexiteit" type="range" name="complexiteit" min="1" max="10">
+    </div>
+
+    <div class="row">
+      <label class="col-3" for="geluk">Geluk:</label>
+      <input class="col-9" id="geluk" type="range" name="geluk" min="1" max="10">
+    </div>
+
+    <div class="row">
+      <label class="col-3" for="strategie">Strategie:</label>
+      <input class="col-9" id="strategie" type="range" name="strategie" min="1" max="10">
+    </div>
+
+    <label for="beschrijving">Beschrijving:</label>
+    <textarea id="beschrijving" name="beschrijving" rows="6"></textarea>
+
+    <div class="row">
+      <label class="col-3">Aantal sterren:</label>
+
+      <input id="1_ster" type="radio" name="sterren" value="1">
+      <label for="1_ster">&star;</label>
+
+      <input id="2_ster" type="radio" name="sterren" value="2">
+      <label for="2_ster">&star;&star;</label>
+
+      <input id="3_ster" type="radio" name="sterren" value="3">
+      <label for="3_ster">&star;&star;&star;</label>
+
+      <input id="4_ster" type="radio" name="sterren" value="4">
+      <label for="4_ster">&star;&star;&star;&star;</label>
+    </div>
+
+    <div class="row">
+      <input class="col-12" type="submit" value="Bewaar">    
+    </div>
+
+  </form>
+
 </body>
 </html>
