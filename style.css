@@ -1,0 +1,71 @@
+body{
+  background-color: #333333;
+  margin: 0;
+}
+
+header{
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid black;
+}
+
+main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* echt centreren */
+}
+
+button {
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333333;
+  width: 200px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: #333333;
+}
+
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer{
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  bottom: 0px;
+  background-color: #2a2a2a;
+  padding: 15px 0px 15px 0px;
+}
